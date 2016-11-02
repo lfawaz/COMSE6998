@@ -9,7 +9,7 @@ import org.apache.spark.{SparkContext, SparkConf}
  * Twitter sentiment test with Spark Streaming
  */
 object sparkStreamingTest {
-    def main (args: Array[String]): Unit = {
+
         println("Twitter Streaming Test")
 
 
@@ -43,7 +43,7 @@ object sparkStreamingTest {
         //ssc.awaitTermination()
 
 
-    }
+
 
 
 }

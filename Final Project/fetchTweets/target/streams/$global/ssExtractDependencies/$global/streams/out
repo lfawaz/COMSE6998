@@ -1,5 +1,4 @@
-sbt.ResolveException: unresolved dependency: edu.stanford.nlp#stanford-corenlp;3.6: not found
-unresolved dependency: edu.stanford.nlp#stanford-parser;3.6: not found
+sbt.ResolveException: unresolved dependency: com.eed3si9n#sbt-assembly;0.14.3: not found
 	at sbt.IvyActions$.sbt$IvyActions$$resolve(IvyActions.scala:291)
 	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:188)
 	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:165)
@@ -50,5 +49,4 @@ unresolved dependency: edu.stanford.nlp#stanford-parser;3.6: not found
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-[error] (*:ssExtractDependencies) sbt.ResolveException: unresolved dependency: edu.stanford.nlp#stanford-corenlp;3.6: not found
-[error] unresolved dependency: edu.stanford.nlp#stanford-parser;3.6: not found
+[error] (*:ssExtractDependencies) sbt.ResolveException: unresolved dependency: com.eed3si9n#sbt-assembly;0.14.3: not found

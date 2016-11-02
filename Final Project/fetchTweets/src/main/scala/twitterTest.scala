@@ -11,7 +11,7 @@ import com.twStream.Utils._
 
 
 object twitterTest {
-    def main (args: Array[String]): Unit = {
+
 
         val tweets = Source.fromFile("sample.20160813-000001.json")
             .getLines()
@@ -24,6 +24,6 @@ object twitterTest {
         tweets.take(20).map(Utils.extractText(_)).map(t => (t, SentimentAnalyzer.mainSentiment(t))).foreach(println)
 
 
-    }
+
 
 }
