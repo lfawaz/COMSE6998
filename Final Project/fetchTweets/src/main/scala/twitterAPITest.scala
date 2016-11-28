@@ -17,7 +17,7 @@ object twitterAPITest {
           .setOAuthAccessTokenSecret("urEAIGHu8ZEnSYUjhejUz6LnL6fCd6MO8VIkObWgDYNN1")
 
 
-        val query = "Samsung"
+        val query = "#s7"
 
         val tw = new TwitterFactory(cb.build()).getInstance
 
