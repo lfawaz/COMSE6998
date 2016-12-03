@@ -1,4 +1,4 @@
-#java -mx5g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
+#java -mx5g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -timeout 5000000 
 
 from pycorenlp import StanfordCoreNLP
 import pandas as pd
@@ -19,13 +19,14 @@ text = text.drop(text.index[2904]).reset_index(drop=True)
 nlp = StanfordCoreNLP('http://localhost:9000')
 output = pd.DataFrame()
 N, d = text.shape
+
 index_val = []
 sentence = []
 sentimentValue = []
 sentiment = []
 column = text['comment']
 
-for date_index in xrange(0, 3200):
+for date_index in xrange(0, 1000):
     if date_index % 100 == 0:
         print date_index
     comment = column[date_index]
@@ -51,5 +52,5 @@ output['index'] = index_val
 output['sentence'] = sentence
 output['sentimentValue'] = sentimentValue
 output['sentiment'] = sentiment
-save_path = 'output'+str(i)
-output.to_csv('/Users/laurenmccarthy/Desktop/'+save_path)
+#save_path = 'output'+str(i)
+output.to_csv('/Users/laurenmccarthy/Desktop/TEST.csv')
