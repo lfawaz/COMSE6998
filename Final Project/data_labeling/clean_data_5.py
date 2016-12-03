@@ -1,5 +1,10 @@
-def clean_data(text_list):
-	#text_str = " ".join(text_list)
+def clean_data(text_str):
+	if type(text_str) is list:
+		text_str = " ".join(text_list)
+	if text_str == 'A e s t h e t i c':
+		text_str = 'Aesthetic'
+	text_str = text_str.replace('\xe2\x84\xa2', '')
+	#text.str = text_str.replace('\xe2', '')
 	text_str = text_str.replace('\n', '')
 	text_str = text_str.replace('&', '')
 	text_str = text_str.replace('[', '')

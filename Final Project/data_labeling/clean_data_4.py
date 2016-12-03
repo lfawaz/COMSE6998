@@ -1,5 +1,7 @@
-def clean_data(text_list):
+def clean_data(text_str):
 	#text_str = " ".join(text_list)
+	text_str = text_str.replace('\xe2\x84\xa2', '')
+	#text.str = text_str.replace('\xe2', '')
 	text_str = text_str.replace('\n', '')
 	text_str = text_str.replace('&', '')
 	text_str = text_str.replace('[', '')

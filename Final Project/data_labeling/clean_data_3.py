@@ -1,4 +1,4 @@
-def clean_data(text_list):
+def clean_data(text_str):
 	#text_str = " ".join(text_list)
 	text_str = text_str.replace('\n', '')
 	text_str = text_str.replace('&', '')
