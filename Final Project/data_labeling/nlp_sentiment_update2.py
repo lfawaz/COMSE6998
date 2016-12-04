@@ -15,6 +15,8 @@ text = text.drop(text.index[2496]).reset_index(drop=True)
 text = text.drop(text.index[2610]).reset_index(drop=True)
 text = text.drop(text.index[2642]).reset_index(drop=True)
 text = text.drop(text.index[2904]).reset_index(drop=True)
+text = text.drop(text.index[2999]).reset_index(drop=True)
+text = text.drop(text.index[2999]).reset_index(drop=True)
 
 nlp = StanfordCoreNLP('http://localhost:9000')
 output = pd.DataFrame()
@@ -26,7 +28,7 @@ sentimentValue = []
 sentiment = []
 column = text['comment']
 
-for date_index in xrange(0, 1000):
+for date_index in xrange(2000, 3000):
     if date_index % 100 == 0:
         print date_index
     comment = column[date_index]
@@ -53,4 +55,4 @@ output['sentence'] = sentence
 output['sentimentValue'] = sentimentValue
 output['sentiment'] = sentiment
 #save_path = 'output'+str(i)
-output.to_csv('/Users/laurenmccarthy/Desktop/TEST.csv')
+output.to_csv('/Users/laurenmccarthy/Desktop/TEST3.csv')
